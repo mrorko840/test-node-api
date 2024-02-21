@@ -11,7 +11,6 @@ app.config = {
     port: process.env.PORT,
 };
 
-
 // create server
 app.createServer = () => {
     const server = http.createServer(app.handleReqRes);
