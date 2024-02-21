@@ -1,5 +1,24 @@
 {
+  "name": "testProject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "ts-node src/server.ts",
+    "dev": "concurrently \"npm:start\" \"cd client && npm run dev\"",
+    "build": "rimraf dist && tsc --project tsconfig.build.json",
+    "serve": "http-server dist -c-1 -o",
+    "lint": "eslint \"./src/*.ts\" ./client/src/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "nodemon": "^3.0.3"
   }
 }
