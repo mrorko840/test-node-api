@@ -1,5 +1,6 @@
 // dependensics
 const http =  require('http');
+require('dotenv').config()
 const {handleReqRes} = require('./helpers/handleReqRes')
 
 // app object
@@ -7,7 +8,7 @@ const app = {};
 
 // config
 app.config = {
-    port: process.env.PORT || 8080,
+    port: process.env.PORT,
 };
 
 
