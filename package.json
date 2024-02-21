@@ -7,11 +7,7 @@
     "node": "18.x"
   },
   "scripts": {
-    "start": "nodemon index",
-    "dev": "concurrently \"npm:start\" \"cd client && npm run dev\"",
-    "build": "rimraf dist && tsc --project tsconfig.build.json",
-    "serve": "http-server dist -c-1 -o",
-    "lint": "eslint \"./src/*.ts\" ./client/src/"
+    "start": "nodemon index"
   },
   "keywords": [],
   "author": "",
