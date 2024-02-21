@@ -7,7 +7,7 @@ const app = {};
 
 // config
 app.config = {
-    port: 4000,
+    port: process.env.PORT || 8080,
 };
 
 
