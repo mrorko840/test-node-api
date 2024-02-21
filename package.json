@@ -7,7 +7,7 @@
     "node": "14.x"
   },
   "scripts": {
-    "start": "ts-node src/server.ts",
+    "start": "nodemon index",
     "dev": "concurrently \"npm:start\" \"cd client && npm run dev\"",
     "build": "rimraf dist && tsc --project tsconfig.build.json",
     "serve": "http-server dist -c-1 -o",
